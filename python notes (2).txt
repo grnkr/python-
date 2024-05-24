@@ -1,0 +1,1993 @@
+python syallbus:
+introduction to python and its uses
+installing python and setting up a development environment
+i/o statements
+data types
+variables
+operators
+conditional statements
+loops(for/while)
+logic
+functions
+modules
+file i/o
+collections: set,tuples,dictionary,list
+oops concept
+classes 
+objects
+inheritance
+polymorphism
+exceptions and error handling
+regular expression
+introduction to libraries(eg:numpy,pandas)
+---------------------------------------------------------------
+Introdution :
+python is a popular high-level programming language.
+that is used for a variety of applications,including web development,
+data analysis, machine learning,automation.
+
+It was created in the late 1980s by Guido van Rossum. 20th feb 1991
+its design code readability and simplicity.
+python its ease of use and readability.
+Its syntax is straightforward and easy to understand.
+
+features:
+1.dynamic typing:python is dynamically typed
+
+2.oops(Object-oriented programming):python supports oop,which      allows write resuable code into classes and objects.
+
+3.Interpreted language:python is an interpreted language,which means that you don't need to compile your code before running it.this makes it easy to write and test code quickly.
+
+4.Large standard library: python comes with a large standard library that includes many useful modules and functions for a variety of tasks.
+
+python application:
+web applications
+desktop gui applications
+console based applications
+software development
+scientific and numeric
+business applications
+audio or video based applications
+3d cad applications
+enterprise applications
+image processing applications
+
+Install python:
+windows or linux or mac
+1.python idle (https://www.python.org/)
+2.pycharm (https://www.jetbrains.com/pycharm/download/#section=windows)
+3.anaconda (https://www.anaconda.com/)
+
+basic code : 
+
+5+5
+'8+8'
+"9+98"
+
+print(5+5)
+print('welcome to vijayawada')
+print('6+65')
+print("welcome to python learning")
+print("8+85")
+
+comments:
+there are two types comments:
+1.single line comments
+2.multi line comments
+
+single line comments:it is represent by #
+ex: #wap to create and question or code details
+
+#wap to print world wide web
+print('world wide web')
+
+#wap to print i like python
+print('i like python')
+
+multi line comments: it is represent by ''' ---------''' or """ ------------- """.
+ex:
+'''
+wap to print
+i
+like
+python
+'''
+print('i')
+print('like')
+print('python')
+
+note:we can use single codes(' ') or double codes(" ") in string format.
+
+escape charateres:
+\n = new line
+\t = tab
+\b =backspace
+\a =beap sound
+
+
+"""
+wap to print
+i 
+like
+python
+"""
+print(' i \n like \n python')
+
+----------------------------------
+'''
+wap to print 
+i
+    like
+        java
+'''
+print(' i \n\t like \n\t\t java')
+
+-------------------------------------
+'''
+wap to print 
+welcome
+    to 
+    this world
+'''
+print('welcome \n\t to \n\t\t\b this world')
+-------------------------------------------------------
+input/output statements:
+output : print() function means like we can display result.
+
+input: 'input' keyword like user to take input values.
+input -> program -> output.
+
+ex:
+#wap to print your name.
+name=input('enter name : ')
+print(name)
+-------------------------------------------
+data types: 
+Numeric : int,float,complex
+String : str
+Sequence : list,tuple,range
+Binary : bytes,bytearray,memoryview
+Mapping : dict
+Boolean : bool
+Set : set,frozenset
+None : none type
+
+ex:
+#data type programs
+a=5
+b=2.2
+c=True
+d='hai'
+e=[1,2,3]
+f={1,2,3}
+g=(1,2,4)
+print(type(a),a)
+print(type(b),b)
+print(type(c),c)
+print(type(d),d)
+print(type(e),e)
+print(type(f),f)
+print(type(g),g)
+------------------------------------------
+#wap to print name and address
+name=input('enter  name : ')
+address =input('enter address : ')
+print(name,'',address)
+------------------------------
+#wap to print name and age
+n=str(input('enter name : '))
+a=int(input('enter age : '))
+print("i'm ",n,a,'years old!')
+------------------------------------
+b=bytearray('abc','utf-8')
+mv=memoryview(b)
+print(mv[0])
+print(bytes(mv[0:1]))
+----------------------------------
+a=int(5)
+print(bytes(a))
+print(bytearray(a))
+--------------------------
+variables : 
+Variables are containers for storing data values.
+
+a variables is created the moment you first assign a value to it.
+ex:
+a=5
+b="kumar"
+print(a)
+print(b)
+
+variables do not need to be declared with any particular type, can even change type after they have been set.
+a=9
+a='rani'
+print(a)
+
+casting:
+if you want to specify the data type of a variable,this can be done with casting.
+ex:
+a=int(23)
+b=float(12.123)
+c=str(30)
+print(type(a),a)
+print(type(b),b)
+print(type(c),c)
+--------------------
+valid variables:
+a=7
+a1=5
+a_=10
+_a=11
+a_b='welcome'
+
+invalid variables :
+2a=6
+a$=5
+$a=7
+a b=22
+
+a=b=c=10
+print(a)
+print(b)
+print(c)
+
+a=b=c='apple','banana','cherry'
+print(a)
+print(b)
+print(c)
+
+a,b,c='apple','banana','cherry'
+print(a)
+print(b)
+print(c)
+
+print() : function is often used to output variables.
+, :separated by a comma.
++ : operator to output multiple variables.
+ex:
+first_name='nitish'
+last_name='kumar'
+full_name=first_name+' '+last_name
+print('first name :',first_name,'\nlast name : ',last_name,'\nfull name : ',full_name )
+-------------------------
+operators:
+Arithematic Operators 
+Assignment Operators 
+Relational or Comparsion Operators 
+Logical Operators 
+Membership Operators 
+Identity Operators 
+Bitwise Operators 
+
+Arithematic Operators :
++,-,*,/,%
+** ->power
+// ->integer
+eg:
+a=int(input('enter no : '))
+b=int(input('enter no : '))
+print('sum : ',a+b)
+print('sub : ',a-b)
+print('mul : ',a*b)
+print('div : ',a/b)
+print('mod : ',a%b)
+print('pow : ',a**b)
+print('div : ',a//b)
+
+----------------------
+Assignment Operators :
+=,+=,-=,*=,/=,%=.**=
+
+a=int(input('enter no : '))
+b=a #4
+print('b value : ',b)
+b+=a #4+=4
+print('add : ',b) #8
+b*=a #8*=4
+print('mul : ',b) #32
+b-=a #32-=4
+print('sub : ',b) #28
+b/=a #28/=4
+print('div : ',b) #7
+b%=a #7%=4
+print('mul : ',b) #3
+b**=a #3**=4
+print('pow : ',b) #1
+----------------------------
+Relational or Comparsion Operators:
+< ,>,<=,>=,==,!=
+
+a=int(input('enter  no : '))
+b=int(input('enter  no : '))
+print(a>b)
+print(a<b)
+print(a<=b)
+print(a>=b)
+print(a==b)
+print(a!=b)
+------------------- 
+Logical Operators :
+and
+or
+not
+
+And: 
+cond1          cond2         result
+  t                     t                  t
+  t                     f                  f
+  f                     t                  f
+  f                     f                  f
+
+a=int(input('enter  no : '))
+b=int(input('enter  no : '))
+print((a>b) and (a>=b))
+print((a>b) and (a<=b))
+print((a!=b) and (a<=b))
+print((a==b) and (a<=b))
+---------------
+or: 
+cond1          cond2         result
+  t                     t                  t
+  t                     f                  t
+  f                     t                  t
+  f                     f                  f
+
+a=int(input('enter  no : '))
+b=int(input('enter  no : '))
+print((a>b) or (a>=b))
+print((a>b) or (a<=b))
+print((a!=b) or (a<=b))
+print((a==b) or (a<=b))
+--------------------------------------
+not:
+not true -> false
+not false->true
+
+a=5
+print(not a==5)
+------------------------
+Membership:
+These operators used to search for element existence with in a collection if found
+return true otherwise false.
+1.in ->true
+2.not in-> on non existance true
+
+in:
+a=[1,2,3]
+print(2 in a)
+-----------------
+not in:
+a=[1,2,3]
+print(2 not in a)
+----------------------------------------
+Identity : 
+These operators used to compare memory address instead of  their values.
+1.is
+2.is not
+a=[1,2,3]
+b=[1,2,3]
+print(id(a))
+print(id(b))
+------------------
+is:
+a=[1,2,3]
+b=[1,2,3]
+print(id(a) is id(b))
+--------------------------
+is not:
+a=[1,2,3]
+b=[1,2,3]
+print(id(a) is not id(b))
+-----------------------------------
+Bitwise Operators:
+& ->bit and
+|   ->bit or
+^ ->Xor
+<< ->left shift
+>> ->right shift
+~ ->  tilde(one's complement)
+
+0=0000
+1=0001
+2=0010
+3=0011
+4=0100
+5=0101
+6=0110
+7=0111
+8=1000
+9=1001
+10=0101
+
+2^0    2^1   2^2    2^3
+1           2       4        8
+----------------------------
+0            0      0         0   =0
+1            0      0        0     =1     rigth to left    0001
+0             1     0          0    =2     0010 
+-----------------------------------------
+a=2  #0010
+b=3  #0011          
+print(a&b)
+------------------
+a=2  #0010
+b=3  #0011          
+print(a|b)
+-----------------
+a=2  #0010
+b=3  #0011          
+print(a^b)
+--------------------------
+a=-9  #0010
+b=3  #0011
+print(a&b) #0010
+print(a|b) #0011
+print(a^b) #0001
+print(a<<1) #0010 -> 0100
+print(a<<2) #0010 -> 1000
+print(a>>1) #0010 -> 0001
+print(a>>2) #0010 -> 0000
+print(~a) #-9 9-1 =8
+--------------------------------------------
+keywords:
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               break               for                 not
+None                class               from                or
+True                continue            global              pass
+__peg_parser__      def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+--------------------------------------------------------------------------
+Logic oriented programming
+
+conditional control statements:
+conditional based : if
+Iterative based (repetive) : while loop,for loop
+
+conditional statements:
+It works based on condition or it executes based on condition.
+
+if condition:
+it's a control statements used to test for a condition types of if control statements are:
+1.simple if
+2.multi conditional if or if elif or ladder if
+3.nested if
+4.block if
+among all this widely use (1) and (2)
+
+simple if or if....else:
+used to test for single condition gives the possility of both true & false.
+usage : 
+if condition : 
+    --------------
+    ---------------(true)
+else:
+     -----------
+     ----------(false)
+
+no of  statements we are writing in the indentation block should be in the same indentation.
+2 intentation blocks(true block   & false block)
+                                    if                     else
+#wap to print big num or small num.
+a=int(input('enter no : '))
+b=int(input('enter no :'))
+if a>b:
+    print('big no.')
+else:
+    print('small no')
+------------------------------
+#wap to read an integer and print whether it is even or odd no.
+n=int(input('enter no : '))
+if n%2==0:
+    print('even no .')
+else:
+    print('odd no')
+-----------------------------------------------
+#wap to read an integer and test is it a common multiple of 3 & 7.
+n=int(input('enter no : '))
+if n%3==0 and n%7==0:
+    print('common multi 3 and 7')
+else:
+    print('non common multi 3 and 7')
+--------------------------------------------------------
+#wap to read a character and test for vowel.
+v=input('enter vowel letters : ')
+l=['a','e','i','o','u','A','E','I','O','U']
+if v in l:
+    print('vowel')
+else:
+    print("non vowel")
+---------------------------------------------------------------------------------
+multi conditional if or if .... elif or ladder if:
+This is used to text for multiple conditions among all these one condition gets satisfied at a
+time.
+Alphabates : upper,lower
+Numbers,special characters
+Ascii value:
+A=65  Z=90
+a=97   z=122
+0=48   9=57
+
+other than this special character.
+ord('A')->Ascii 65
+chr(97)->a
+
+ord function: It written Ascii of given charater
+ex:
+n=input('enter char')
+print(ord(n))
+-----------------------
+chr function : It written characters equivaluence of given ascii
+ex:
+n=int(input('enter no'))
+print(chr(n))
+------------------------
+usage:
+if cond1:
+    -----------
+    -----------
+elif cond2:
+   -------
+   ---------
+elif cond3:
+      ----------
+     --------------
+elif condN;
+   -------------
+   -------------
+else:
+    ----------------
+--------------------------------------------------------------------------
+if condition is satisfied then control comes out from the if condition.
+1.add
+2.sub
+3.mul
+4.div
+ch=int(input('enter no : '))
+if ch==1:
+    print('add')
+elif ch==2:
+    print('sub')
+elif ch==3:
+    print('mul')
+elif ch==4:
+    print('div')
+else:
+    print('nothing')
+------------------------------------------------------
+nested if:
+If  with in another if or if followed by another if
+1.inner if
+2.outer if
+
+usage:
+if condition ->outer if
+      if condition ->inner if
+
+#wap to read an alphabatc and test for upper case alpha or lower case alpha
+c=input('enter letter : ')
+d=ord(c)
+if (d>=65 and d<=90) or (d>=97 and d<=122):
+    if (d>=65 and d<=90):
+        print('upper case')
+    else:
+        print('lower case')
+else:
+    print('invalid')
+--------------------------------------------------------------
+block if :
+(almost equal to simple if)
+cond -> true (we can see the output)
+It is same a simple if but does not assciated with else keyword
+it usage:    is if condition .
+eg:
+if cond:
+    -----
+     -----
+code :
+a=int(input('enter no : '))
+b=int(input('enter no : '))
+if a==b:
+    print('equal')
+-------------------------------------------------
+conditional operator /terminary operator:
+in python this operator treted as single line simple if
+eg:
+#wap to read 2 integers and print biggest integer
+a=int(input('enter no : '))
+b=int(input('enter no : '))
+big =a if a>b else b
+print(big)
+--------------------------
+Iterative control statements or looping control statements:
+these control statements used to excicute set of statements repitively types:
+1.while loop
+2.for loop
+       simple for 
+      collection base for loop
+     comparchensive for loop
+loop(terminology):
+initialization
+condition
+body(logic)
+
+syntax:
+     n=1
+condition n<=10 --> fail loop terminal or true repeat
+print(n)
+n=n+1
+
+while loop: it exicuits as long as condition is true.
+first condtion gets checked and then body gets excicuted
+
+while condition/indentation block.
+code:
+ n=1
+while n<=10:
+    print(n,'',end='')
+    n=n+1
+---------------------
+n=10
+while n>=1:
+    print(n,'',end='')
+    n=n-1
+----------------------
+wap to print  all even numbers from 1 to 100.
+code :
+n=1
+while n<=100:
+    if n%2==0:
+        print(n,'',end='')
+    n=n+1
+-----------------
+wap to print all the multiples of 4 from 1 to 160.
+code:
+n=1
+while n<=160:
+    if n%4==0:
+        print(n,'',end='')
+    n=n+1
+----------------
+wap to print all the not multiples of 4 from 1 to 160.
+code:
+n=1
+while n<=160:
+    if n%4!=0:
+        print(n,'',end='')
+    n=n+1
+---------------------------------------------------------------
+for loop:
+its a user friendly loop when it comes to syntax.
+
+1) Default initialzation,default step.
+for i in range(10):
+    print(i,'',end='')
+
+2)known initialization with default step.
+for i in range(5,11):
+    print(i,'',end='')
+
+3)know initialization know step.
+for i in range(1,11,2):
+    print(i,'',end='')
+
+4)reverse iteration:
+for i in range(10,0,-1):
+    print(i,'',end='')
+
+wap to print all eng upper case alphabates
+for i in  range(65,91):
+    print(chr(i),' ',end='')
+
+wap to print all eng lower case alphabates
+for i in range(97,123):
+    print(chr(i),' ',end='')
+
+wap to print all eng  alphabates Z to A.
+for i in range(90,64,-1):
+    print(chr(i),' ',end='')
+
+wap to print all eng  alphabates z to a.
+for i in range(122,96,-1):
+    print(chr(i),' ',end='')
+-----------------------------------------------
+
+simple logic:
+1.sum logic
+2.count logic
+3.factor logic
+4.digit logic
+5.perfect no
+6.prime no
+7.armstrong no.
+8.multiplication table
+9.patter logic
+10.faibo nacci series.
+
+sum logic:
+wap to print sum of first 10 number.
+s=0
+for i in range(1,11):
+    s=s+i
+print(s," ",end='')
+
+wap to print sum of even number and sum of odd numbers.
+en=0
+on=0
+for i in range(1,11):
+    if i%2==0:
+        en=en+i
+    else:
+        on=on+i
+print("sum of even no  : ",en)
+print("sum of odd no  : ",on)
+ ----------------------------------------
+count logic:
+c=0
+c=c+1 ->loop
+
+wap to print count of multiples of 2 from 1 to 10:
+c=0
+for i in range(1,11):
+    if i%2==0:
+        c=c+1
+print(c)
+-----------------
+wap to print count of multiples of 5 from 1 to 50:
+c=0
+for i in range(1,51):
+    if i%5==0:
+        c=c+1
+print(c)
+-------------------
+factor logic:
+5
+------
+1  5
+
+5
+---
+5%1
+5%2
+5%3
+5%4
+5%5
+
+for i in range(1,6):
+    if n%i==0:
+        i is a factor
+
+WAP to read an integer and print their its factors.
+n=int(input('enter no : '))
+for i in range(1,n+1):
+    if n%i==0:
+        print(i,' ',end='')
+-------------
+wap to print factor count of a given number.
+fc=0
+for i in range(1,n+1):
+    if n%i==0:
+        fc=fc+1
+print(fc,' ',end='')
+--------
+wap to read a number and print even number factors
+n=int(input('enter no : '))
+fc=0
+for i in range(1,n+1):
+    if n%i==0:
+        if i%2==0:
+            print(i,' ',end='')
+---------------------------------
+prime logic:
+the no that contains only 2 factors
+eg:
+wap to read a number and test prime no or not
+
+read no
+find factor
+compute fc
+compare fc
+
+fc==2 ->prime
+fc!=2->not prime
+-------------------------
+n=int(input('enter no : '))
+fc=0
+for i in range(1,n+1):
+    if n%i==0:
+        fc=fc+1
+if fc==2:
+    print('prime no ')
+else:
+    print('non prime no')
+--------------------------
+perfect no:
+sum of factors of a number makes the number its self by excluding number factor.
+
+read no
+find factors
+excluding no
+sum of factors
+compare sum of factors and number
+
+code:
+n=int(input('enter no : '))
+fc=0
+for i in range(1,n):
+    if n%i==0:
+        fc=fc+i
+if fc==n:
+    print('perfect no ')
+else:
+    print('not perfect no')
+------------------------------------------
+digit logic:
+the process of exctracting individual digits of a number
+get digit
+reduce number
+until number is 0
+repeat the process
+
+we should no use for loop:
+for loop is used only when there is perfect range()
+use while loop.
+
+789
+
+789%10 ->9   9//10 ->0
+78%10  -> 8   8//10->0
+7%10   -> 7    7%10->0
+
+code:
+n=int(input('enter no : '))
+while n>0:
+    d=n%10
+    print(d,'',end='')
+    n=n//10
+---------------
+Armstrong no:
+Sum of cubes of individual digits in a number makes number itself
+
+read no
+get digits
+cubes of digits
+add the cubes 
+check reading no & sum  of cubes are same.
+
+code:
+m=int(input('enter no: '))
+sum=0
+temp=m
+while temp >0:
+      d=temp%10
+      sum+=d**3    
+      temp //=10
+if m==sum:
+    print(m,' is an Armstrong number')
+else:
+    print(m,' is an not Armstrong number')
+-------------------------
+factorial of a number:
+s=s+n(continous sum)
+c=c+1(continous increment)
+
+factorial 5!
+5x4x3x2x1   or 1x2x3x4x5(continuous product)
+
+wap to print factorial of given number
+n=int(input('enter no: '))
+f=1
+for i in range(1,n+1):
+    f=f*i
+print('factor of ',n,'is',f)
+-------------------------------
+multiplication table:
+wap to read a number and print mathematical table 10 terms.
+for i in range(1,11):
+    print(n,'x',i,'=',i*n)
+-----------------
+n=int(input('enter no: '))
+for i in range(1,11):
+    r=i*n
+    print(n,'x',i,'=',r)
+-----------------------
+nested loops:
+A loop with in another loop, 1 loop is know as outer loop & another loop.
+ex:
+for i in range(1,6):
+        for i in range(1,6):
+                -----------
+                 -----------
+               #end of inner loop
+#end of outer loop.
+
+for 1 iteration of outerloop entire iterations of inner loop is taken
+eg:
+if we want prime number from 1 to 50 then.
+outer loop - generating no.
+inner loop - check whether prime no or not.
+
+code:
+wap to print
+1 1 1 1 1 
+2 2 2 2 2 
+3 3 3 3 3 
+4 4 4 4 4 
+5 5 5 5 5
+
+for i in range(1,6): #rows
+    for j in range(1,6): #cols
+        print(i,'',end='')
+    print('')
+-----------------------
+code :
+wap to print
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5
+
+for i in range(1,6): #rows
+    for j in range(1,6): #cols
+        print(j,'',end='')
+    print('')
+---------------------
+wap to print 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+for i in range(1,6): #rows
+    for j in range(1,6): #cols
+        print('*','',end='')
+    print('')
+------------------
+wap to print 
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+for i in range(1,6): #rows
+    for j in range(1,i+1): #cols
+        print('*','',end='')
+    print('')
+--------------------------------
+code :
+wap to print 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+
+for i in range(5,0,-1): #rows
+    for j in range(1,i+1): #cols
+        print('*','',end='')
+    print('')
+--------------------------
+q)wap to print all prime numbers from 1 to 50.
+for i in range(1,51): #rows
+    fc=0
+    for j in range(1,51): #cols.
+        if i%j==0:
+             fc=fc+1
+    if fc==2:
+        print(i,'',end='')
+----------------------------------------------
+Jump Statements:
+Break
+Continue
+Pass
+
+Break:
+           A break statement is used to break or stop a flow control.
+           This is generally used in a loop.
+
+syntax:
+Loop{
+    Condition:
+        break
+    }
+
+code:
+# for loop traversing from 1 to 4
+for i in range(1, 5):
+# If this condition becomes true break will execute
+	if(i == 3):
+	# Break statement will terminate the entire loop
+		break
+	print(i)
+---------------------------------------------------
+Continue:
+	it will only skip one iteration when the associated condition is true and then continue the rest of the loop unlike the break statement. 
+
+syntax:
+while True:
+    ...
+    if x == 100:
+        continue
+    print(x)
+
+code:
+# for loop traversing from 1 to 4
+for i in range(1, 5):
+# If this condition becomes true continue will execute
+	if(i == 2):
+	# Continue statement will skip the iteration when i=2 and continue the rest of the loop
+		continue
+	print(i)
+
+---------------------------------------
+Pass:
+       The pass statement is an interesting statement, as when it gets executed nothing happens. It plays the role of a placeholder.
+
+Syntax:
+
+def function: 
+pass
+
+
+code :
+# Traversing through every character of the string
+for alphabet in 'Legends':
+		# If alphabet='g' program will do nothing and won't print the letter
+	if(alphabet == 'g'):
+		pass
+	else:
+		print(alphabet)
+-------------------------------------------------------------------------------
+wap to print +ve and -ve
+wap to print leap year and non leap year
+-----------------------------------------------
+String Handling
+Math Handling
+Date Handling
+File Handling
+Exception Handling
+Collections : list,tuples,sets,dictionary
+-------------------------------------------------
+String Handling:
+
+String:
+        Strings in python are surrounded by either single quotation marks, or double quotation marks.
+
+'hello' is the same as "hello".
+
+You can display a string literal with the print() function:
+print('hello')
+print("hello")
+
+Assign String to a Variable
+Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+a = "Hello"
+print(a)
+
+Multiline Strings
+You can assign a multiline string to a variable by using three quotes:
+a = """demo
+paragraph 
+multi 
+line
+comment
+"""
+print(a)
+
+
+Strings are Arrays
+ strings in Python are arrays of bytes representing unicode characters.
+
+However, Python does not have a character data type, a single character is simply a string with a length of 1.
+
+Square brackets can be used to access elements of the string.
+
+Example
+Get the character at position 1 (remember that the first character has the position 0):
+
+a = "Hello, World!"
+print(a[1])
+
+Looping Through a String
+Since strings are arrays, we can loop through the characters in a string, with a for loop.
+
+Example
+Loop through the letters in the word "banana":
+
+for x in "banana":
+  print(x)
+
+
+String Length
+To get the length of a string, use the len() function.
+
+Example
+The len() function returns the length of a string:
+
+a = "Hello, World!"
+print(len(a))
+---------------------------------
+Check String
+To check if a certain phrase or character is present in a string, we can use the keyword in.
+
+Example
+Check if "free" is present in the following text:
+
+txt = "The best things in life are free!"
+print("free" in txt)
+-------------------------------------------
+Math Handling:
+usage:
+import math
+
+code:
+import math
+print(math.pi)
+print(round(math.pi,2))
+print(math.e)
+print(round(math.e,2))
+print(pow(2,3))
+print(math.sqrt(25))
+print(math.fabs(-12))
+print(math.fabs(13))
+print(min(40,50))
+print(max(40,50))
+print(math.ceil(2.01))
+print(math.floor(2.99))
+print(math.radians(1718))
+print(math.degrees(30))
+print(math.sin(90))
+print(math.asinh(90))
+print(math.log10(70))
+-------------------------------
+random:
+usage:
+import random
+
+code:
+import random
+print(random.randint(1,100)) 		
+
+code:
+import random
+r=random.randint(1,999999);
+print(r)
+-------------
+wap to print 10 random no in 10 question
+code :
+import random
+for i in range(10):
+    r=random.randint(1,100);
+    print(r)
+--------------------------------------------------
+Date Handling:
+A date in Python is not a data type of its own, but we can import a module named datetime to work with dates as date objects.
+
+code:
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+----------------------------
+Creating Date Objects
+To create a date, we can use the datetime() of the datetime module.
+
+The datetime() class requires three parameters to create a date: year, month, day.
+
+import datetime
+
+x = datetime.datetime(2020, 5, 17)
+print(x)
+------------------------
+wap to print current date:
+import datetime
+dt=datetime.datetime.now()
+print(dt.date())
+-------------------------------
+wap to print current time:
+import datetime
+dt=datetime.datetime.now()
+print(dt.time())
+------------------------------
+Index	Field	    Values
+0	4-digit year	    2008
+1	Month	    1 to 12
+2	Day	    1 to 31
+3	Hour	    0 to 23
+4	Minute	    0 to 59
+5	Second	    0 to 61 (60 or 61 are leap-seconds)
+6	Day of Week	0 to 6 (0 is Monday)
+7	Day of year	1 to 366 (Julian day)
+8	Daylight savings	-1, 0, 1, -1 means library determines DST
+
+--------------------------------------------------------------------
+Getting current time
+
+import time;
+
+localtime = time.localtime(time.time())
+print ("Local current time :", localtime)
+----------------------------------------------------
+Getting formatted time
+
+import time;
+
+localtime = time.asctime( time.localtime(time.time()) )
+print ("Local current time :", localtime)
+-------------------------------------------------------------
+Getting calendar for a month
+The calendar module gives a wide range of methods to play with yearly and monthly calendars. Here, we print a calendar for a given month ( Jan 2008 ) −
+
+import calendar
+
+cal = calendar.month(2008, 1)
+print "Here is the calendar:"
+print cal
+-------------------------------------------
+members of date objects:
+dt.hour ->0 to 23 hrs
+dt.minute -> 0-59
+dt.second ->0-59
+dt.day ->dd(1-31)
+dt.month ->mm(1-12)
+dt.year ->yyyy
+dt.weekday ->weekday(0-6) it is a function.
+
+code:
+import datetime
+dt=datetime.datetime.now()
+h=dt.hour
+if h>=10 and h<=17:
+    print('done')
+else:
+    print('denied')
+------------------------------------------------
+File Handling:
+File handling is an important part of any web application.
+Python has several functions for creating, reading,updating and deleting files.
+there are four different methods(modes) for opening a file:
+r-read
+a-append
+w-write
+x-create
+t-text
+b-binary
+
+creating a file :
+f=open('hai.txt','x')
+print('done')
+
+writing a some text:
+f=open('hai.txt','w')
+f.write("i'm like a zero.")
+print('done')
+
+append (add some text means continue):
+f=open('hai.txt','a')
+f.write("i'm look like a hero.")
+print('done')
+
+reading a file :
+f=open('hai.txt','r')
+print(f.read())
+--------------------
+f=open('hai.txt','r')
+print(f.readline())
+-----------------------------
+f=open('hai.txt','r')
+print(f.readlines())
+----------------------------
+delete a file:
+
+usage :
+import os
+
+ex:
+import os
+os.remove("hai.txt")
+
+check if file exist:
+code:
+import os
+if os.path.exists("hai.txt"):
+    os.remove('hai.txt')
+else:
+    print('this file does not exist')
+-----------------------------------------------
+Exception handling:
+Exception is known as run time error. it gets executed or running the application with insufficient resources.
+
+Examples of runtime :
+1.divide by zero
+2.run application with insufficient resources
+     no ram/memory
+     no printer
+     etc.
+     manipulating non-existing
+     files
+     connecting to unknown pages/server/url
+
+Need of Exception Handling:
+to avoid abrupt termination by executing all mandatory statements.
+
+supporting language:
+except all language support exception handling
+
+Implementation requirements for exception handlings:
+There are two blocks
+1.Try
+2.except
+
+Exception in python:
+1.NameError -> using unintilized variable
+2.ValueError ->unable to convert string to number
+3.ZeroDivisionError->/o
+4.IndexError->It gets raised on reading out of range index of elements.
+5.FileNotFoundError
+6.FileExistsError
+
+Types of Error Handler and Types of Except block:
+1.one try with one Except block
+2.one try with multiple Except block
+3.types of Error handler and types of except block
+4.finally except block.
+
+1.one try with one Except block:
+These is preffered there is a chance of getting one error.
+syntax:
+try:
+  -----------
+   ---------
+Except(xxx error):3
+   -------------
+   -----------------
+
+example:
+try:
+    print(n)
+Except(NameError):
+  print(no such variable)
+
+2.one try with multiple Except block:
+These is preferred when there is a chance of getting more than one error.
+syntax:
+try:
+   ------
+   ------
+excep(....)
+    ----------
+    ----------
+excep(.....)
+    -----------
+    -----------
+
+wap to read two integers divide one by other and display the result
+ try:
+    a=int(input('enter no 1'))
+    b=int(input('enter no 2'))
+    c=a/b
+    print(c)
+except(ValueError):
+    print('invalid number')
+except(ZeroDivisionError):
+    print('cannot divided by zero')
+----------------------------------------------
+try:
+    print('x')
+except:
+    print('something went wrong')
+finally:
+    print('this try is finishe')
+-----------------------------------
+collection framwork:
+collection: Group of elements starting common name.
+Need of collection:
+        it aviods a usage of number of independent variable usage.
+
+Types of collections supported by python are:
+1.array : homogeneous elements
+2.collection : heterogeneous elements
+
+Array:
+Collection of similar data elements holding common name
+eg:
+list of marks ->{66,99,77}
+list of names ->{"apple","bannana","guava"} .....etc
+
+Demerit of an array is :
+   it holds only similar elements
+Types of arrays:
+1.single dimensional array - []
+2.double dimensional array - [][]
+3.multi dimensional array - [][][]
+
+single dimensional array/1d array:
+   its a collection of /series of similar data elements
+
+array: this module contains 1D array manipulations
+
+usage: from array import *
+
+create array: 
+a1=array(data type,[1,4,5])
+
+Data types:
+i- int
+f- float
+
+Empty array elements:
+a2=array(i,[]) or a3=array('i')
+
+#wap to create an array and display the elements an array 
+from array import *
+a1=array('i',[16,13,14,19,13])
+print(a1)
+
+#one by one printing
+for word in a1:
+    print(word)
+print(len(a1))
+
+python array as dynamic :
+    other language are static arrays where as python array is dynamic ie. it allows
+    ->add element->eg: a1.append(e)
+    ->insert element->eg: a2.insert(index,e)
+    ->remove element->eg: a1.remove(e)
+append-> it allows always last
+
+#wap to create an empty array and display all dynamic manipulations.
+from array import *
+a1=array('i')
+print(a1)
+a1.append(99)
+a1.append(88)
+print(a1)
+a1.insert(1,100)
+print(a1)
+a1.remove(88)
+print(a1)
+
+collection is a group of heterogeneous elements also know as immutable types
+1.list
+2.tuple
+3.set
+4.dictonary
+
+	List
+list:
+python list creating lists, changing list items, removing items and other list operational
+
+create a list:
+
+
+#a list with 3 integers
+n=[1,2,5]
+print(n)
+
+#empty list
+my_list=[]
+print(my_list)
+
+#list with mixed data types
+my_list=[1,'hello',3.4]
+print(my_list)
+
+#Access list elements
+languages=['python','swift','c++']
+#access item at index 0
+print(languages[0])
+#access item at index 2
+print(languages[2])
+
+#negative indexing 
+#access item at index 0
+print(languages[-1])
+#access item at index 2
+print(languages[-3])
+
+#slicing of a list:
+#list slicing 
+my_list=['v','i','s','i','o','n']
+#items from index 2 to index4
+print(my_list[2:5])
+#items from index 5 to end
+print(my_list[5:])
+#items beginning to end
+print(my_list[:])
+
+Add elements a list:
+1.append()
+2.extend()
+
+
+#using append()
+n=[21,34,54,12]
+print("before append : ",n)
+#using append() method
+n.append(99)
+print("After append : ",n)
+
+#using extend()
+prime_number=[2,3,5]
+print('list1 : ',prime_number)
+even_number =[4,6,8]
+print('list2 : ',even_number)
+#join two lists
+prime_number.extend(even_number)
+print('list after append : ',prime_number)
+
+#change list items: 
+languages=['python','swift','c++']
+#changing the third item to 'c'
+languages[2]='c'
+print(languages)
+
+Remove on item from a list
+1.del()
+2.remove()
+
+
+languages=['python','swift','c++','c','java','rust','r']
+#deleting the second item
+del languages[1]
+print(languages)
+#deleting the last item
+del languages[-1]
+print(languages)
+#deleting first two items
+del languages[0:2]
+print(languages)
+
+languages=['python','swift','c++','c','java','rust','r']
+#remove 'python' from the list
+languages.remove('python')
+print(languages)
+
+List Methods:
+    append()
+    extend()
+    insert()
+    remove()
+    pop()
+    clear()
+    index()
+    count()
+    sort()
+    reverse()
+    copy()
+----------------------------------------------------
+	Tuple
+tuple:A tuple in python is similar to a list.
+
+#Creating a tuple
+#different types of tuples
+
+#empty tuple
+my_tuple=()
+print(my_tuple)
+
+#tuple having integers
+my_tuple=(1,2,3)
+print(my_tuple)
+
+#tuple with mixed datatypes
+my_tuple=(1,2,"Objects",3.4)
+print(my_tuple)
+
+#nested tuple
+my_tuple=('mouse',[8,4,6],(1,2,3))
+print(my_tuple)
+
+
+#Create a tuple with one element
+var1=('hello') #string
+print(type(var1))
+var2=('hello',) #tuple
+print(type(var2))
+
+#parentheses is  optional
+var3='hello', #tuple
+print(type(var3))
+
+
+Access tuple elements:
+1.indexing
+2.negative indexing
+3.slicing
+
+1.indexing:
+
+#accessing tuple elements using indexing
+letters=('v','i','s','i','o','n')
+print(letters[0])
+print(letters[5])
+
+
+2.negative indexing:
+
+#accessing tuple elements using negative indexing
+letters=('v','i','s','i','o','n')
+print(letters[-1])
+print(letters[-3])
+
+
+3.slicing:
+
+#accessing tuple elements using slicing
+letters=('v','i','s','i','o','n')
+#elements 2nd to 4th index
+print(letters[1:4])
+#elements beginning to 2nd
+print(letters[:-4])
+#elements 5th to end
+print(letters[5:])
+#elements beginning to end
+print(letters[:])
+
+
+
+#tuple methods:
+my_tuple=('a','p','p','l','e')
+print(my_tuple.count('p'))
+print(my_tuple.index('l'))
+
+#iteration through a tuple
+languages=('python','swift','c++')
+
+#iterating through the tuple
+for language in languages:
+    print(language)
+
+#check if an item exists in tuple
+languages=('python','swift','c++')
+print('c' in languages)
+print('python' in languages)
+
+
+--------------------------------------------
+	Sets
+SETs:
+    A set is a collection of unique data.That is,elements of a set cannot be duplicate.
+
+Create a set:
+    
+
+#create a set of integer type
+student_id={112,113,116,118,115}
+print('student id : ',student_id)
+
+#create a set of string type
+vowel={'a','e','i','o','u'}
+print('vowel letters : ',vowel)
+
+#create a set of mixed data types
+mixed_set={'hello',101,-2,'Bye'}
+print('set of mixed data types: ',mixed_set)
+
+#Create an empty set:
+empty_set=set()
+
+#create an empty dictionary 
+empty_dictionary={ }
+
+#check data type of empty_set
+print('data type of empty set : ',type(empty_set))
+
+#check data type of empty_set
+print('data type of empty dictionary : ',type(empty_dictionary))
+
+
+#Duplicate items in a set
+numbers={2,4,6,8,6,4,2}
+print(numbers)
+
+#add items to a set
+numbers={21,34,54,12}
+print('initial set : ',numbers)
+
+#using add() method
+numbers.add(99)
+print('updated set : ',numbers)
+
+#update set
+compaines={'vision','dell','hp'}
+tech_companies=['apple','google','microsoft','apple']
+compaines.update(tech_companies)
+print(compaines)
+
+#Remove an element from a set
+languages={'swift','java','python'}
+print('initial set: ',languages)
+
+#remove java from a set
+removedValue =languages.discard('java')
+
+print('set after remove(): ',languages)
+
+Built in fuctions with set
+all()
+any()
+enumerate()
+len()
+max()
+min()
+sorted()
+sum()
+
+#iterate over a set
+fruits={'apple','peach','mango'}
+#for loop to access each fruits
+for fruit in fruits:
+    print(fruit)
+
+#find number of set elements
+
+set operations:
+    union of two sets
+    set intersection
+    difference between two sets
+    set symmetric difference
+    
+
+#union of two sets
+#first set
+a={1,3,5}
+
+#second set
+b={0,2,4}
+
+#perform union operation using |
+print('union using |: ',a|b)
+
+#set intersection
+#first set
+a={1,3,5}
+
+#second set
+b={1,2,3}
+
+#perform intersection operation using &
+print('intersection using & :',a&b)
+
+#perform intersection operation using intersection()
+print('intersection using intersection() :',a.intersection(b))
+
+
+# difference between two sets
+#first set
+a={2,3,5}
+
+#second set
+b={1,2,6}
+
+#perform difference operation using -
+print('difference using - :',a-b)
+
+#perform difference operation using difference() 
+print('difference using difference() :',a.difference(b))
+
+
+#set symmetric difference
+#first set
+a={2,3,5}
+
+#second set
+b={1,2,6}
+
+#perform difference operation using ^
+print('using ^ :',a^b)
+
+#using symmetric_difference() 
+print('using symmetric_difference() :',a.symmetric_difference(b))
+
+
+#check if two sets are equal
+
+set methods:
+add()
+clear()
+copy()
+difference()
+difference_update()
+discard()
+intersection()
+intersection_update()
+isdisjoint()
+issubset()
+issuperset()
+pop()
+remove()
+union()
+update()
+-------------------------------
+	Dictonary
+eDictionary :
+            python dictionary is an ordered collection of items.it elements in key/value pairs. 
+            Here, keys are unique identifiers that are associated with each value.
+            ex:
+            keys         values
+            england      london
+            italy         rome
+
+#create a dictionary
+capital_city ={"nepal":"kathmandu","italy":"rome","england":"london"}
+print(capital_city)
+
+#add elements to a dictionary
+capital_city ={"nepal":"kathmandu","italy":"rome","england":"london"}
+print("initial Dictionary : ",capital_city)
+capital_city['japan']="tokyo"
+print("updated Dictionary : ",capital_city)
+
+#change values of dictionary
+
+student_id={111:"raj",112:'kumar',113:'nitish'}
+print('initial dictionary: ',student_id)
+
+student_id[112]='nani'
+print('updated dictionary: ',student_id)
+
+#accessing elements from Dictonary
+student_id={111:"raj",112:'kumar',113:'nitish'}
+print(student_id[111])
+student_id={111:"raj",112:'kumar',113:'nitish'}
+print(student_id[113])
+
+#removing elements from Dictonary
+student_id={111:"raj",112:'kumar',113:'nitish'}
+print('initial dictionary: ',student_id)
+del student_id[111]
+print('updated dictionary: ',student_id)
+
+Dictonary methods:
+all()
+any()
+len()
+sorted()
+clear()
+keys()
+values()
+
+
+#Dictonary membership
+
+#membership for Dictonary keys
+squares={1:1,3:9,5:25,7:49,9:81}
+
+print(1 in squares)
+print(2 in squares)
+
+#membership tests for key only not value
+print(49 in squares)
+
+#iterating a Dictonary
+
+#iterating a Dictonary
+squares={1:1,3:9,5:25,7:49,9:81}
+for i in squares:
+    print(squares[i])
+-----------------------------
+Functions:
+a function is a block of code that performs a specific task.
+
+types of functions :
+standard library functions : these are built in functions in python.
+user defined functions : we can create our own functions based on our requirements.
+
+function declaration:
+def f_name(arguments):
+    #fuction body
+    return
+
+def : keyword used to  declare a fuction.
+f_name : any name given to the function.
+arguments : any value passed to function.
+return (optional) : returns value from a  function. 
+
+def great():
+    print('hello world')
+
+
+#Call the function 
+great()
+
+#ex:
+def great():
+    print('hello world')
+#call the function 
+great()
+
+print('outside function')
+
+
+#function arguments:
+#function with two arguments
+def add_numbers(n1,n2):
+    sum=n1+n2
+    print('Sum : ',sum)
+#function call with two values
+add_numbers(5,9)
+
+
+#function with no argument
+def add_num():
+    #code
+    print('hai')
+#function call with no values
+add_num()
+
+#function return type:
+def find_square(n):
+    result=n*n
+    return result
+#function call
+square = find_square(3)
+
+print('Square : ',square)
+
+
+#library functions:
+print()
+sqrt()
+pow()
+
+
+#ex:
+import math
+#sqrt computers the square root
+square_root=math.sqrt(4)
+
+print('Square root of 4 is  : ',square_root)
+
+#pow() comptes the power
+power = pow(2,3)
+
+print('2 to the power 3 is : ',power)
+
+def std(name,phno):
+    print("i'm ",name,"this is my phno : ",phno)
+std('rani',9876543210)
+std('raja',9988776655)
+std('raju',9879876543)
+---------------------------------------------------
+OOP: Object Oriented Programming
+
+introduction to oop
+different between oop and pop
+classes and objects
+oop methodologies:
+     inheritance
+     polymorphism
+     encapsulation
+     abstraction
+--------------------------
+introduction to oop:
+oop is a way of computer proagramming using the idea of "objects" to represents data and methods.
+It is also an approach used for creating neat and reusable code instead of a redundant one.
+------------------
+different between oop and pop:
+oop: object oriented programming
+->It is a bottom-up approach
+->program is divided into objects
+->makes use of access modifiers 'public','private','protected'
+->It is more secure
+->object can move freely within member functions
+->It supports inheritance
+--------
+pop: procedural oriented programming
+->It is a top-down approach
+->program is divided into functions
+->doesn't use Access modifiers
+->It is less secure
+->data can move freely from function to function within programs
+->It does not support inheritance
+----------------------------------------------------------
+
+
+
