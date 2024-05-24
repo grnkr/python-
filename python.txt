@@ -1,0 +1,1523 @@
+python:
+chapter 1 : modules,comments & pip
+chapter 2 : variables and data types
+chapter 3 : strings
+chapter 4 : lists and tuples
+chapter 5 : Dictionary & sets
+chapter 6 : conditional expressions (if,if else,elif,nested if)
+chapter 7 : loop in python
+chapter 8 : functions & recursions
+chapter 9 : file I/O
+chapter 10: Object Oriented programming(OOP's)
+		1.oops
+		2.Inheritance & more on oops
+		
+
+Project: snake, water,gun games
+---------------------
+python : 1991 guido van rossom
+c : 1972 Dennis Ritchie
+java : 1991 fail -> 1995 -> 1996 james gosling 
+-----------------------
+use realtime:
+web applications
+mobile applications
+desktop applications
+tools
+games
+ml =dl
+dl
+ai =ml +dl
+robotic
+wireless car wifi light ac ed ...
+ds = ai + ml +dl
+da =ds + lib
+---------------------
+full stack developer :
+front end:
+html 
+css
+js
+(angular js,react js,vue js)
+ts
+bootstrap,less,sass ....
+jquery
+xml
+....
+back end:
+1.language:
+python + django or flask or cherry py
+2.Database:
+sql: oracle ,mysql , ms sql server ....
+nosql:mongodb
+--------------------------------
+Chapter 1:
+		Modules, Comments & pip
+
+->lets write our very first python program 
+create a file called hello.py 
+print('hello world')    ->print is a function 
+
+execute this file(.py file) by typing python hello.py and you will see hello world printed on the screen.
+
+
+->Modules:
+	A module is a file containing code written by somebody else(usually ) which can be  imported and used in our programs.
+
+->pip:
+	pip is the package manager for python you can use pip to install a module on your system.
+			pip install flask  (flask module.)
+
+
+Types of modules:
+There are two types of modules in python.
+1.Built in modules -> pre installed in python.
+2.External modules -> need to install using pip.
+
+some examples of built in modules are os,abc, etc.
+some examples of external modules are tensorflow,flask, etc.
+
+
+->comments:
+	comments are used to write something which the programmer does not want to execute.
+		can be used to mark author name,date etc.
+Types of comments:
+there are 2 types of comments in python.
+1.single line comments -> written using # 
+2.multi line comments -> written using single codes(' ') or double codes(" ")-> ''' comments '''
+-------------------------------------
+Practice set:
+1.wap to print twinkle twinkle littel start poem in python.
+2.use REPL(Read Evaluate Print Loop) and print the table of 5 using it 
+3.Install an external module and use it to perform an operator of your interest.
+4.wap to print the content of a directory using os module. 
+5.label the program written in problem is with comments.
+---------------------
+Introduction :
+	python is a widely used general purpose,interpreted high level programming language developed by Guido van Rossum in 1991 at the National Research institute for Mathematics and computer science in the Netherlands.
+
+	python is a very simple programming language so even if someone is new to programming,he can python without facing any issues.
+
+	python is named after comedy television show monty python's flying circus. It is not named after the python snake.
+
+There are two mojor python versions. python2 and python3 and they are quite difference frome each other in some points.
+--------------------------------------
+Applications/Products:
+1.Web Server Programming: python can be used for server-side programming. Django and                
+                      flask are most common python libraries that can be used for it.
+
+2.Data Science and Machine Learning: python is the best and most commonly used 
+                                     language for machine learning and data science.
+3.Game Development: it is widely used in the development of games, include GUI.
+4.GUI Application : by using libraries like Tkinter,PyQt and pyGame, we can easily develop apps supporting GUI.
+------------------------------
+Features and Advantages of python:
+1.Easy to learn and code: python is a very programming-friendly language and everyone can learn to code in python easily.
+2.open source and free.
+3.Object Oriented Programming language(OOP's).
+4.Expressive Language:python  can perform complex tasks using a few lines of code.
+5.Interpreted Language:it means the python program is executed one line at a time.
+6.Rice Library.
+7.GUI Programming support
+8.Dynamic Memory allocation
+9.Dynamically Typed.  
+-----------------------------
+how to install python software:
+1.python.org  -> download  -> idle
+2.anacode.com -> download  -> tools 
+3.pycharm (jetbrains)-> community version download 
+4.online gdb compiler
+-----------------------------
+hardware requriments:
+processor : i3
+ssd       : 520gb
+ram       : 4gb
+----------------
+software requriments:
+idle
+pycharm
+jupyter
+spyder
+orange
+vs code
+notepad++ 
+---
+notepad 
+cmd
+-------------------
+how to check python version:
+python --version
+---------------------------
+basic programs:
+5+5
+'8+8'
+print(7*7)
+print('1+5')
+'welcome'
+print('hello every one.')
+----------------------------
+how to open a file and how to save a file and how to run python code.
+open cmd -> wind+R run -> we  can enter cmd
+notepad filename.py ex: notepad z.py
+then write a code and save a file -> ctrl+s
+python filename.py
+----------------------------
+chapter 2 : variables and data types
+Variables: 
+	Variable is a memory-location in the program's memory which is used to store data value or information. Value stored in a variable can be modified during program's execution.
+
+A variable is the name given to a memory location in a python.
+for example :
+a=30
+b='harry'
+c=71.22
+->variable=container to store a value.
+->keywords= reserved words in python.
+->Identifiers=class|function|variable name
+--------------------------------------------
+keywords:
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not
+--------------------------
+Data types:
+primarily there are following data types in python.
+1.Integers
+2.Floating points numbers
+3.Strings
+4.Booleans
+5.None
+
+Python is a fantastic language that automatically identifies the type of data for us.
+a=72  	      ->Identifies a as class<int>
+b=88.22       ->Identifies b as class<float>
+name='raj'    ->Identifies name as class<str>
+------------
+Rules for defining a variable name -> Also applies to other identifies.
+->A variable name can contain alphabets,digits and underscores.
+->A variable name can only start with an alphabets and underscores.
+->A variable name can't start with a digit 
+->No white space is allowed  to be used inside a variable name.
+ex: variables
+a=1
+a1=2
+a2=3
+a_=4
+_a=5
+a_b=6
+print(a)
+print(a1)
+print(a2)
+print(a_)
+print(_a)
+print(a_b)
+      (or) 
+print(a,a1,a2,a_,_a,a_b)
+----------------
+ex: data types:
+a=1
+a1=2.12
+a2='A'
+a_="hello"
+_a=None
+a_b=True
+b=[1,2,3]
+c={11,22,33}
+d=(3,4,5)
+e={1:'a',2:'b'}
+print(a,type(a))
+print(a1,type(a1))
+print(a2,type(a2))
+print(a_,type(a_))
+print(_a,type(_a))
+print(a_b,type(a_b))
+print(b,type(b))
+print(c,type(c))
+print(d,type(d))
+print(e,type(e))
+----------------------
+Operators in python:
+following are some common operators in python:
+1.Arithmetic operators
+2.Assignment operators
+3.comparison operators or relational operators
+4,logical operators
+-------
+Arithmetic operators:
++,-,*,/,%
+code :
+a=2
+b=3
+print(a+b)
+print(a-b)
+print(a*b)
+print(a**b)
+print(a/b)
+print(a//b)
+print(a%b)
+-------------------
+input and output:
+output: the print() means function name we can visiable the result.
+ ex: print("hello")
+
+input:the user gives some information in input values taken check the program to verify statements as we get then result are known as input.
+
+ex: input->program->output.
+
+a=int(input('enter no1 : '))
+b=int(input('enter no2 : '))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a**b)
+print(a/b)
+print(a//b)
+print(a%b)
+--------------------
+relational or comparison operators:
+<,>,<=,>=,==,!=
+a=int(input('enter no1 : '))
+b=int(input('enter no2 : '))
+print(a>b)
+print(a<b)
+print(a<=b)
+print(a>=b)
+print(a==b)
+print(a!=b)
+--------------------
+Assignment Operators:
+=,+=,-=,*=,/=,%=
+
+a=int(input('enter no1 : '))  #2
+b=int(input('enter no2 : '))  #3
+b=a      
+print(b) #2
+b+=a
+print(b) #4
+b*=a
+print(b) #8
+b-=a  
+print(b) #6
+b/=a
+print(b) #3
+b%=a
+print(b) #1
+-----------------
+logical operators:
+and
+or
+not
+----
+and: x
+c1    c2    r
+t      t    t
+f      t    f
+t      f    f
+f      f    f
+------
+or: +
+c1    c2    r
+t      t    t
+f      t    t
+t      f    t
+f      f    f
+-------------
+not: 
+ex: !T=F
+    !F=T
+--------------
+a=int(input('enter no1 : '))  
+b=int(input('enter no2 : '))  
+print((a>b)and (a!=b))
+print((a>b)or (a!=b))
+print(not(a!=b))
+------------------
+type() function and typecasting
+typee function is used to  find the datatype of a given variables.
+ex:
+a=31
+type(a)  -> class<int>
+
+a=31
+print(a,type(a))
+
+b="31"
+print(b,type(b)) -> class<str>
+
+A number can be converted into a string and vice versa(if possible)
+there are many function to convert one data type into another.
+
+str(31) -> "31"  -> Integer to string conversion
+int("31") -> 31  -> String to Integer conversion
+float(31) -> 31.0  -> Integer to float conversion
+
+input() function:
+this function allows the user to take input from the keyboard as a string
+
+ex:
+a=input('enter name :') -> if a is "gnk" the user entered gnk.
+
+It is important to note that the output of input  is alwaysa string
+-> if a is 31 user entered 31
+-----------------------
+chapter 2 -Practice set:
+1.wap to add two numbers
+2.wap a find remainder when a number is divided by 2.
+3.wap to check the type of the variable assigned using input() function.
+4.wap to find average of two numbers entered by the user.
+5.wap to calculate square of a number entered by the user.
+6.wap to use comperison operators to find out whether a given variable 'a' is greater than 'b'
+or not take a=34 and b=80.
+-------------------------------
+chapter 3: Strings
+String is a data type in python.
+String is a sequence of characters enclosed in quotes.
+we can primarily,write a string in these three ways.
+1.single quoted string -> a='gnk'
+2.double quoted string -> b="gnk"
+3.Triple quoted string -> c='''gnk'''
+
+name =input('enter name : ')
+address= str(input('enter address : '))
+print(name,type(name))
+print(address,type(address))
+----------------
+String :
+    
+
+name='raj'
+print(name,type(name))
+
+n=input('enter name : ')
+print(n,type(n))
+
+n=str(input('enter name'))
+print(n,type(n))
+
+a=5
+b=10
+
+print(a+b)
+
+b=3
+
+print(a+b)
+
+a*b
+
+'hai'
+
+name='welcome'
+print(name[1])
+
+print(len(name))
+
+print(name[5])
+
+n='banana'
+print(n)
+print(n[2])
+print(n[0:3])
+print(n[::-1])
+print(n[::-2])
+print(n[::-3])
+print(n[::2])
+print(n[::-3])
+
+a=b=c="apple"
+print(a)
+print(b)
+print(c)
+
+a,b,c="apple",'banana','cherry'
+print(a)
+print(b)
+print(c)
+
+z='welcome'
+y=z[::-1]
+for a in y:
+    print(a,end=' ')
+
+z='apple'
+k=-1
+for j in z:
+    k=k+1
+    print(j,'--->',k)
+
+The index in a string starts from o to (length-1) in python. In order to slice a string,
+we use the following syntax:
+ st=name[ind_start:ind_end] 
+ ind_start->first index included
+ ind_end -> last index is not included
+
+st[0:3] returns "wel" -> characters from o to 3
+st[1:3] returns "el"->   character from 1 to 3
+
+Negative indices: negative indices can also be used as shown in the -1 corresponds to the (length-1)
+index,-2 to (length-2)
+
+slicing with skip value:
+we can provide a skip value as a part of our slic like this:
+word="amazing"
+word[1:6:2] -> 'mzn'
+other advanced slicing techniques
+word="amazing"
+word[:7] -> word[0:7]->'amazing'
+word[0:] -> word[0:7]->'amazing'
+
+String Functions:
+   some of the mostly used functions to perform operations on or manipulate strings are:
+   1.len() ->this function returns the length of the string
+   ex:len('hai') -> returns 3
+   2.string.endswith('abc')-> this function tells  whether the variable string ends with the string 
+   'abc' or not.
+  3.string.startswith('abcc')
+  4.string.count()
+  5.string.capitalize()
+  6.string.find(word)
+  7.string.replace(oldword,newword)
+
+a="jack"
+print(len(a))
+print(a.endswith('k'))
+print(a.startswith('b'))
+print(a.count('k'))
+print(a.upper())
+print(a.lower())
+print(a.capitalize())
+print(a.replace('j','b'))
+print(a.replace('j','bl'))
+print(a.find('jack'))
+
+Escape sequence characters:
+    sequence of characters after backslash '\'
+    \n -> new line
+    \t -> tab space
+    \b -> back space
+    \' -> single quote
+    \\ -> backslash
+
+#wap to print world wide web
+print('world wide web')
+
+'''
+wap to print 
+world
+wide
+web
+'''
+print(' world \n wide \n web')
+
+'''
+wap to print
+i 
+    like
+        python
+'''
+print('I \n\t like \n\t\t python')
+
+chapter 4: lists and tuples
+list:
+python list creating lists, changing list items, removing items and other list operational
+
+create a list:
+
+
+#a list with 3 integers
+n=[1,2,5]
+print(n)
+
+#empty list
+my_list=[]
+print(my_list)
+
+#list with mixed data types
+my_list=[1,'hello',3.4]
+print(my_list)
+
+#Access list elements
+languages=['python','swift','c++']
+#access item at index 0
+print(languages[0])
+#access item at index 2
+print(languages[2])
+
+#negative indexing 
+#access item at index 0
+print(languages[-1])
+#access item at index 2
+print(languages[-3])
+
+#slicing of a list:
+#list slicing 
+my_list=['v','i','s','i','o','n']
+#items from index 2 to index4
+print(my_list[2:5])
+#items from index 5 to end
+print(my_list[5:])
+#items beginning to end
+print(my_list[:])
+
+Add elements a list:
+1.append()
+2.extend()
+
+
+#using append()
+n=[21,34,54,12]
+print("before append : ",n)
+#using append() method
+n.append(99)
+print("After append : ",n)
+
+#using extend()
+prime_number=[2,3,5]
+print('list1 : ',prime_number)
+even_number =[4,6,8]
+print('list2 : ',even_number)
+#join two lists
+prime_number.extend(even_number)
+print('list after append : ',prime_number)
+
+#change list items: 
+languages=['python','swift','c++']
+#changing the third item to 'c'
+languages[2]='c'
+print(languages)
+
+Remove on item from a list
+1.del()
+2.remove()
+
+
+languages=['python','swift','c++','c','java','rust','r']
+#deleting the second item
+del languages[1]
+print(languages)
+#deleting the last item
+del languages[-1]
+print(languages)
+#deleting first two items
+del languages[0:2]
+print(languages)
+
+languages=['python','swift','c++','c','java','rust','r']
+#remove 'python' from the list
+languages.remove('python')
+print(languages)
+
+List Methods:
+    append()
+    extend()
+    insert()
+    remove()
+    pop()
+    clear()
+    index()
+    count()
+    sort()
+    reverse()
+    copy()
+----------------------------------------------------
+	Tuple
+tuple:A tuple in python is similar to a list.
+
+#Creating a tuple
+#different types of tuples
+
+#empty tuple
+my_tuple=()
+print(my_tuple)
+
+#tuple having integers
+my_tuple=(1,2,3)
+print(my_tuple)
+
+#tuple with mixed datatypes
+my_tuple=(1,2,"Objects",3.4)
+print(my_tuple)
+
+#nested tuple
+my_tuple=('mouse',[8,4,6],(1,2,3))
+print(my_tuple)
+
+
+#Create a tuple with one element
+var1=('hello') #string
+print(type(var1))
+var2=('hello',) #tuple
+print(type(var2))
+
+#parentheses is  optional
+var3='hello', #tuple
+print(type(var3))
+
+
+Access tuple elements:
+1.indexing
+2.negative indexing
+3.slicing
+
+1.indexing:
+
+#accessing tuple elements using indexing
+letters=('v','i','s','i','o','n')
+print(letters[0])
+print(letters[5])
+
+
+2.negative indexing:
+
+#accessing tuple elements using negative indexing
+letters=('v','i','s','i','o','n')
+print(letters[-1])
+print(letters[-3])
+
+
+3.slicing:
+
+#accessing tuple elements using slicing
+letters=('v','i','s','i','o','n')
+#elements 2nd to 4th index
+print(letters[1:4])
+#elements beginning to 2nd
+print(letters[:-4])
+#elements 5th to end
+print(letters[5:])
+#elements beginning to end
+print(letters[:])
+
+
+
+#tuple methods:
+my_tuple=('a','p','p','l','e')
+print(my_tuple.count('p'))
+print(my_tuple.index('l'))
+
+#iteration through a tuple
+languages=('python','swift','c++')
+
+#iterating through the tuple
+for language in languages:
+    print(language)
+
+#check if an item exists in tuple
+languages=('python','swift','c++')
+print('c' in languages)
+print('python' in languages)
+
+
+--------------------------------------------
+chapter 5: sets & dictionary
+
+	Sets
+SETs:
+    A set is a collection of unique data.That is,elements of a set cannot be duplicate.
+
+Create a set:
+    
+
+#create a set of integer type
+student_id={112,113,116,118,115}
+print('student id : ',student_id)
+
+#create a set of string type
+vowel={'a','e','i','o','u'}
+print('vowel letters : ',vowel)
+
+#create a set of mixed data types
+mixed_set={'hello',101,-2,'Bye'}
+print('set of mixed data types: ',mixed_set)
+
+#Create an empty set:
+empty_set=set()
+
+#create an empty dictionary 
+empty_dictionary={ }
+
+#check data type of empty_set
+print('data type of empty set : ',type(empty_set))
+
+#check data type of empty_set
+print('data type of empty dictionary : ',type(empty_dictionary))
+
+
+#Duplicate items in a set
+numbers={2,4,6,8,6,4,2}
+print(numbers)
+
+#add items to a set
+numbers={21,34,54,12}
+print('initial set : ',numbers)
+
+#using add() method
+numbers.add(99)
+print('updated set : ',numbers)
+
+#update set
+compaines={'vision','dell','hp'}
+tech_companies=['apple','google','microsoft','apple']
+compaines.update(tech_companies)
+print(compaines)
+
+#Remove an element from a set
+languages={'swift','java','python'}
+print('initial set: ',languages)
+
+#remove java from a set
+removedValue =languages.discard('java')
+
+print('set after remove(): ',languages)
+
+Built in fuctions with set
+all()
+any()
+enumerate()
+len()
+max()
+min()
+sorted()
+sum()
+
+#iterate over a set
+fruits={'apple','peach','mango'}
+#for loop to access each fruits
+for fruit in fruits:
+    print(fruit)
+
+#find number of set elements
+
+set operations:
+    union of two sets
+    set intersection
+    difference between two sets
+    set symmetric difference
+    
+
+#union of two sets
+#first set
+a={1,3,5}
+
+#second set
+b={0,2,4}
+
+#perform union operation using |
+print('union using |: ',a|b)
+
+#set intersection
+#first set
+a={1,3,5}
+
+#second set
+b={1,2,3}
+
+#perform intersection operation using &
+print('intersection using & :',a&b)
+
+#perform intersection operation using intersection()
+print('intersection using intersection() :',a.intersection(b))
+
+
+# difference between two sets
+#first set
+a={2,3,5}
+
+#second set
+b={1,2,6}
+
+#perform difference operation using -
+print('difference using - :',a-b)
+
+#perform difference operation using difference() 
+print('difference using difference() :',a.difference(b))
+
+
+#set symmetric difference
+#first set
+a={2,3,5}
+
+#second set
+b={1,2,6}
+
+#perform difference operation using ^
+print('using ^ :',a^b)
+
+#using symmetric_difference() 
+print('using symmetric_difference() :',a.symmetric_difference(b))
+
+
+#check if two sets are equal
+
+set methods:
+add()
+clear()
+copy()
+difference()
+difference_update()
+discard()
+intersection()
+intersection_update()
+isdisjoint()
+issubset()
+issuperset()
+pop()
+remove()
+union()
+update()
+-------------------------------
+	Dictonary
+Dictionary :
+            python dictionary is an ordered collection of items.it elements in key/value pairs. 
+            Here, keys are unique identifiers that are associated with each value.
+            ex:
+            keys         values
+            england      london
+            italy         rome
+
+#create a dictionary
+capital_city ={"nepal":"kathmandu","italy":"rome","england":"london"}
+print(capital_city)
+
+#add elements to a dictionary
+capital_city ={"nepal":"kathmandu","italy":"rome","england":"london"}
+print("initial Dictionary : ",capital_city)
+capital_city['japan']="tokyo"
+print("updated Dictionary : ",capital_city)
+
+#change values of dictionary
+
+student_id={111:"raj",112:'kumar',113:'nitish'}
+print('initial dictionary: ',student_id)
+
+student_id[112]='nani'
+print('updated dictionary: ',student_id)
+
+#accessing elements from Dictonary
+student_id={111:"raj",112:'kumar',113:'nitish'}
+print(student_id[111])
+student_id={111:"raj",112:'kumar',113:'nitish'}
+print(student_id[113])
+
+#removing elements from Dictonary
+student_id={111:"raj",112:'kumar',113:'nitish'}
+print('initial dictionary: ',student_id)
+del student_id[111]
+print('updated dictionary: ',student_id)
+
+Dictonary methods:
+all()
+any()
+len()
+sorted()
+clear()
+keys()
+values()
+
+
+#Dictonary membership
+
+#membership for Dictonary keys
+squares={1:1,3:9,5:25,7:49,9:81}
+
+print(1 in squares)
+print(2 in squares)
+
+#membership tests for key only not value
+print(49 in squares)
+
+#iterating a Dictonary
+
+#iterating a Dictonary
+squares={1:1,3:9,5:25,7:49,9:81}
+for i in squares:
+    print(squares[i])
+-----------------------------
+chapter 6:
+Conditional Expressions:
+sometimes we want to play pubg an our phone 
+if the day is sunday.
+sometimes we order icecream online if the day is sunny.
+sometimes we go hiking if our parents allow.
+
+All these are decisions which depends on a condition being met.
+In python programming too, we must be able to execute instructions on a condition being met.
+This is what conditional are for!
+
+if:
+the statement is condition satify then we display result otherwise we can't display result.
+syntax:
+if cond:
+    st
+Q:wap to check even no or odd no.
+n=int(input('enter no : '))
+if n%2==0:
+    print('even no.')
+-------------
+if else:
+the condition is statify then we get result true value and otherwise the condition is not statify then we get result false value.
+
+syntax:
+if cond:
+    st true value
+else:
+    st false value
+ 
+Q:wap to check even no or odd no.
+n=int(input('enter no : '))
+if n%2==0:
+    print('even no.')
+else:
+    print('odd no.')
+-------------------
+a=22
+if(a>9):
+    print('Greater')
+else:
+    print('lesser')
+----------------------
+Q:wap to print yes when the age entered by the user is greater than or equal to 18.
+relational operators:
+== ->equals
+>= ->greater than/equal to
+<= ->less than /equal to ....
+---------------------------------
+elif or multi if or ladder if or if elif:
+elif in python means [else if].
+An if statement can be chained together with a lot of these elif statements followed by an else statement.
+
+syntax:
+if(cond1):
+   #code
+elif(cond2):
+    #code
+elif(cond3):
+    #code
+..............
+else:
+   #code
+----------
+ord() : ord() means like function is string to ascii values.
+ex:
+print(ord('A'))
+
+chr() : chr() means like function is ascii values to string.
+ex:
+print(chr(122))
+
+Note:
+ascii values:
+A=65   Z=90
+a=97   z=122
+0=48   9=57  
+----------
+Q:wap to check upper case, lower case, numeric and special chara.
+n=input('enter somevalue : ')
+a=ord(n)
+if a>=65 and a<=90:
+    print('upper case.')
+elif a>=97 and a<=122:
+    print('lower case.')
+elif a>=48 and a<=57:
+    print('numeric.')
+else:
+    print('special chara.')
+---------------------------------
+Nested if:
+syntax:
+if cond1: outer if 
+    if cond2:  inner if
+         st  true value
+    else:
+        st  false value
+else:
+   st false value
+
+Q:wap to check upper case or lower case.
+n=input('enter some value: ')
+a=ord(n)
+if  (a>=65 and a<=90) or ( a>=97 and a<=122):
+    if  a>=65 and a<=90:
+        print('upper case.')
+    else:
+        print('lower case.')
+else:
+    print('invalid.')
+-------------------------
+chapter 7: loops
+sometimes we want to repeat a set of statements in our program for instance :print 1 to 1000.
+
+loops make it easy for a programmer to tell the computer, which set of instructions to repeat and how!.
+
+Types of loops :
+primarily there are two types of loops.
+1.while loop
+2.for loop
+
+we will look into these one by one!.
+syntax:
+init
+while condition:           ->the block keeps executing                            
+    #body of the loop       until theconditon is true.
+
+In while loops,the condition is checked first. If it evaluates to true, the body of the loop is executed otherwise not!
+If the loop is entered, the process of is continued until the condition because false.
+
+Q:wap to print 1 to 50 using a while loop.
+n=1
+while n<=50:
+    print(n,end=' ')
+    n=n+1
+-------------------
+#wap to print a to z
+n=97
+while n<=122:
+    print(chr(n),end=' ')
+    n=n+1
+--------------------------
+#wap to print z to a
+n=122
+while n>=97:
+    print(chr(n),end=' ')
+    n=n-1
+-----------------------
+for  loop :
+A for loop is used to iterate through a sequence like list, tuple, or string.
+
+the syntax of a for loop looks like this:
+l=[1,7,8]
+for item in l:
+    print(item)
+
+
+range function :
+the range function is used to generate a sequence of mumbers.
+we can also sepcify the start,stop and step-size as follows:
+range(start,stop,step-size)
+
+1.default init,known condition,default step:
+for i in range(11):
+    print(i,end=' ')
+
+2.known init,known condition,default step:
+for i in range(5,11):
+    print(i,end=' ')
+
+3.know init,condition,step:
+for i in range(1,21,3):
+    print(i,end=' ')
+
+4.reverse 
+for i in range(10,0,-1):
+    print(i,end=' ')
+-----------------------------
+jumping statements:
+break
+continue
+pass
+
+The break statement:
+break is used to come out of the loop when encountered.
+It instructs the program to - Exit the loop now.
+ex:
+for i in range(0,10):
+    print(i)
+    if i==3:
+        break
+
+The continue statement:
+continue is used to stop the current iteration of the loop and continue with the next one It instructs the program to skip this iteration.
+ex:
+for i in range(0,10):
+    if i==3:
+        continue
+    print(i)
+
+pass statement:
+pass is a null statement in python
+It instructs to do nothing
+ex:
+l=[1,3,5]
+for item in l:
+    pass
+-----------------------
+chapter 8: Functions and Recursions.
+
+A function is a group of statements performing a specific task.
+
+When a program gets bigger in size and its complexity grows, It gets difficult for a programmer to keep track on which piece of code is doing what!.
+
+A function can be reused by the programmer in a given program any number of 
+ex:
+syntax:
+def func1():
+     print("hello")
+The function can be called any number of times,anywhere in the program 
+
+function call 
+whenever we want to call a function, we put the name of the function followed by parenthesis as follows:
+func1() -> this is called function call
+
+function definition:
+The part containing the exact set of instructions are executed during the function call.
+
+types of functions:
+There are two types of functions:
+1.Built in functions ->Already present in python
+2.User defined functions -> Defined by the user
+
+examples of built in function includes len(),print(),range() etc.
+
+the func1() function we defined is an example of uses defined function.
+
+functions with arguments:
+a function can accept some values it can work with. we can put these values in the parenthesis. A function can also return values as shown below:
+
+ex:
+1.wap to print with arguments and with return value.
+def greet(name):
+    gr='Hello '+name
+    return gr
+a=greet("Raj")
+print(a)
+----------------------------------
+2.wap to print without arguments and with return value.
+def add():
+    a=5
+    b=10
+    c=a+b
+    return c
+sum=add()
+print(sum)
+---------------------
+3.wap to print with arguments and without return value.
+def add(a,b):
+    print('sum =',a+b)
+add(2,5)
+---------------------
+4.wap to print without arguments and without return value.
+def display():
+    print('hello how are you!')
+display()
+-------------------
+Recursion:
+Recursion is a function which calls itself it is used to directly use a mathematical formula as a function. 
+ex:
+factorical(n)=n* factorial(n-1)
+
+this function can be defined as follows:
+def fac(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*fac(n-1)
+res=fac(1)
+print(res) 
+
+the programmer need to be extremely careful while working with recursion to ensure that the function doesn't infinitely keep calling itself.
+recursion is sometime the most direct way to code an alogrithm.
+----------------------------------------
+chapter 9: File I/O:
+the random access memory is voliate and all its contents are last once a program terminates.
+In order to persist the data forever, we use files
+
+A file is data stored in a stroage device. A python program can talk to the file by reading content from it and writing content to it.
+
+programmer -> comp program written in python -> write and read <- file 
+RAM =volatile
+HDD =Non volatile
+
+Types of Files:
+there are 2 types of files:
+1.Text files(.txt,.c etc)
+2.Binary files(.jpg,.dat,etc)
+
+python has a lot of functions for reading,updating and deleting files.
+
+Opening a file
+python has an open() function for opening files. It takes 2 parameters: filename and mode.
+syntax: open("this.txt","r")
+open -> open is a built in function
+this.txt -> file name
+r -> mode of opening (read mode)
+
+Reading a file :
+f=open('hai.txt','r')
+text=f.read()
+print(text)
+f.close()
+--------------------------
+
+f=open('iris.csv','r')
+text=f.readlines()
+print(text)
+f.close()
+----------------------
+Modes of opening a file:
+r -> reading
+w -> writing
+a -> appending
++ -> updating
+
+rb -> read in binary mode
+rt -.read in text mode.
+
+how to create a file:
+f=open('abc.txt','x')
+print('done')
+
+---------------
+how to create a content in file:
+f=open('ab.txt','w')
+f.write('welcome to my house')
+f.close()
+print('ok')
+---------------------
+how to read a file:
+f=open('ab.txt','r')
+print(f.read())
+-----------------------
+how to append a file:
+f=open('ab.txt','a')
+f.write(' were are you!')
+f.close()
+print('done')
+-------------------
+how to delete a file:
+import os
+os.remove('abc.txt')
+print('done')
+-------------
+#check if file exist:
+import os 
+if os.path.exists('ab.txt'):
+    os.remove('ab.txt')
+    print('deleted')
+else:
+    print('the file does not exist')
+------------------------------------------
+how to delete folder:
+impose os 
+os.rmdir('myfolder')
+------------------------
+chapter 10: 1.Object Oriented Programming
+
+Solving a problem by creating objects is one of the most popular approaches in programming. This is called Object Oriented Programming.
+
+class:
+A class is a blueprint for creating objects.
+ 
+contains info to create a valid application<-blank form -> filled by an student ->application of the student
+
+                                              class     -> Object instantiation -> object
+
+syntax:
+class employee:
+      #methods & variables
+
+Object:
+An object is an instantiation of a class.When class is defined, a template (info) is define memory is allocated only after object instantiation.
+
+Objects of a given class can invoke the methods avoilable to it without revealing the implementation details to the user.     -> Abstraction & Encapsulation!
+
+Modelling a problem in oops
+we identify the following in our problem 
+Noun      -> class      ->Employee
+Adjective -> Attributes -> name,age,salary
+verbe     -> Methods    -> getSalary(),increment()
+----------------------------------------
+Class Attributes:
+An attribute that belongs to the class rather than a particular object.
+Ex:
+class employee:
+    company="Google" #specific to each class
+a=employee()   # object instantiation
+a.company
+employee.company="Youtube"  # changing class attribute
+a.company
+----------------
+Instance Attributes:
+An attribute that belongs to the instance (object)
+Assuming the class from previous ex:
+a.name="raj"
+a.salary="90k"
+----------------
+Note:Instance attributes take prefernce over class attributes during assignment & retreival.
+a attributes ->1.Is attributes present in Object? 2.Is attributes present in class?
+----------------------------------------------
+'self' parameter:
+self refers to the instance of the class.
+It is automatically passed with a function call from an object
+
+a.getSalary() ->here self to a
+               -> equivalent to 
+
+class emp:
+    company="Google"
+    def getSalary(self):
+        print("Salary is not there")
+e=emp()
+e.getSalary()
+----------------
+static method:
+sometimes we need a function that doesn't use the self parameter. we can define a static method like this.
+
+@staticmethod  -> decorator to mark greet as a static method.
+def greet():
+    print("hello user")
+
+--------------------------
+__init__(): constructor
+__init__ is a special method which is first run as soon as the object is created.
+__init__ method is also know as constructor.
+It takes self argument and can also take further arguments.
+
+for ex:
+class emp:
+    def __init__(self,name):
+        self.name=name
+        print(self.name)
+    def getSalary(self):
+        print('30k')
+a=emp('raj')
+a.getSalary()
+----------------------
+chapter 10: 2.Inheritance & more an OOPs
+
+Inheritance is a way of creating a new class from an existing class
+
+syntax:
+class emp:     ->base class
+      #code...
+
+class programmer(emp):  -> derived or child class
+      #code ....
+we can use the method and attributes of emp in programmer object.
+Also,we can overwrite or add new attributtes and methods in programmer class.
+
+Types of Inheritance:
+1.single inheritance
+2.multilevel inheritance
+3.multiple inheritance
+4.hierarchical inheritance
+-------------------------
+single inheritance:
+single inheritance occurs when child class inherits only a single parent class
+
+base => derived
+
+class A:
+    def showa(self):
+        print('from class A.')
+class B(A):
+    def showb(self):
+        print('from class B.')
+res=B()
+res.showa()
+res.showb()
+-------------------- 
+multilevel inheritance:
+when a child class becomes a parent for another child class.
+
+parent => child1 => child2
+
+class A:
+    def showa(self):
+        print('from class A.')
+class B(A):
+    def showb(self):
+        print('from class B.')
+class C(B):
+    def showc(self):
+        print('from class C.')
+r=C()
+r.showa()
+r.showb()
+r.showc()
+--------------------------------
+multiple inheritance:
+multiple inheritance occurs when the child class inherits from more than one 
+parent class.
+
+parent1 <-> parent 2 => child
+
+class A:
+    def showa(self):
+        print('from class A.')
+class B():
+    def showb(self):
+        print('from class B.')
+class C(A,B):
+    def showc(self):
+        print('from class C.')
+r=C()
+r.showa()
+r.showb()
+r.showc()
+----------------------
+hierarchical inheritance:
+
+child1 -> parent <- child2
+
+class A:
+    def showa(self):
+        print('from class A.')
+class B(A):
+    def showb(self):
+        print('from class B.')
+class C(A):
+    def showc(self):
+        print('from class C.')
+y=B()
+y.showa()
+y.showb()
+r=C()
+r.showa()
+r.showc()
+----------------------------------- 
+super() method:
+super() method is used to access the methods of a super class in the 
+derived class
+
+super __init__() -> calls constructor of the base class
+
+class methods:
+a class method is a method which is bound to the class and not the object of the class.
+@classmethod decorator is used to create a classmethod
+
+syntax:
+@classmethod
+def (cls,p1,p2):
+     .....
+
+@property decorators
+consider the following class.
+
+class emp:
+    @property
+    def name(self):
+        return self.name
+
+e=emp() 
+print(e.name)
+
+
+@.getters and @.setters
+the method name with @property decorator is called getter method
+we can define a function + @name.setter decorator.
+@name.setter
+def name(self,value):
+     self.ename=value
+--------------------------------
+programs
+projects
+
+
